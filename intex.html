@@ -6,21 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <from>
+    <form>
         <h3>CADASTRO</h3>
         <input type="text"placeholder="login"Id="login">
-    </from>
+    </form>
     <form>
         <input type="password"placeholder="senha"Id="senha">
     </form>
-<from>
+<form>
     <input type="telephone"placeholder="telefone"id="telefone">
-</from>
+</form>
 <form>
 <input type="email"placeholder="email"id="email">
 </form>
 <form>
     <input type="submit"onllck="logar"();retun false>
 </form>
+<script>
+    functionlogar() {
+        var login=document.getElementById('login').value;
+        var senha=document.getElementById('senha').value;
+        var email=document.getElementById('email').value;
+        var telefone=document.getElementById('telefone').value;
+        if(login=="seila" && senha=="123" && email=='seila@gmail.com'&& telefone=='40028922' ){
+            alert('sucesso');
+            location.href='home.html';
+        }else{
+            alert('usuario ou senha icorreto');
+        }
+    }
+    </script>
 </body>
 </html>
