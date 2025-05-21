@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>★login★</title>
+</head>
+<body>
+    <div class="seila">
+    <form>
+        <h3>S★</h3>
+    <input type="text"placeholder="login"Id="login">
+    <input type="password"placeholder="senha"Id="senha">
+    <input type="tel"placeholder="telefone"id="telefone">
+    <input type="email"placeholder="email"id="email">
+    <input type="submit"onclick="logar(); return false;">
+</form>
+</div>
+<script>
+
+    function logar() {
+        var login=document.getElementById('login').value;
+        var senha=document.getElementById('senha').value;
+        var email=document.getElementById('email').value;
+        var telefone=document.getElementById('telefone').value;
+        if(login=="seila" && senha=="123" && email=='sa@gmail.com'&& telefone=='40028922' ){
+            alert('sucesso');
+            location.href="home.html";
+        }else{
+            alert('usuario ou senha icorreto');
+        }
+    }
+    </script>
+</body>
+</html>
